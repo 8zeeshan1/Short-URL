@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>URL Shortner</h1>
+    <% if( locals.id ) { %>
+        <p> Generated URL is -> http://localhost:8001/id/<%= id %></p>
+    <% } %>
+    <form method="post" action="/url">
+    <input type="text" name="url" placeholder="http://example.com">
+    <button type="submit">Generate</button>
+    </form>
+    <div>
+    <% if(locals.urls){ %>
+        <table>
+            <thead>
+                <tr>
+                    <th>S no.</th>
+                    <th>Short URL</th>
+                    <th>Redirect URL</th>
+                    <th>Clicks</th>
+                    <% if(locals.role && role == "ADMIN") { %>
+                        <th>Created By</th>
+                        <% } %>
+                </tr>
+            </thead>
+            <tbody>
+                <% let length = 1; %>
+                <% urls.forEach(url => { %>
+                <tr>
+                    <td><%= length++ %></td>
+                    <td><%= url.shortId %></td>
+                    <td><%= url.redirectUrl %></td>
+                    <td><%= url.visitHistory.length %></td>
+                    <% if(locals.role && role == "ADMIN") { %>
+                        <td><%= url.createdBy?.name %></td>
+                        <% } %>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } %>
+    </div>
+</body>
+</html>
