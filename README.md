@@ -4,6 +4,9 @@ A backend-focused **URL shortening service** built with **Node.js**, **Express**
 
 ---
 
+## 🔗 Live Link
+  https://short-url-s6b3.onrender.com
+
 ## ⚙️ Tech Stack
 
 - **Node.js** – Server runtime environment
@@ -57,8 +60,8 @@ npm install
 3. **Create a `.env` file in the root directory**
 
 ```env
-PORT=5000
 MONGO_URL=your_mongodb_atlas_url
+JWT_SECRET=your_JWT_secret_key
 ```
 
 4. **Run the application**
@@ -74,7 +77,7 @@ node server.js
 
 | Variable      | Description                        |
 |---------------|------------------------------------|
-| `PORT`        | Port number for server to listen on |
+| `JWT`        | Web Token secret key for authentication and authorization |
 | `MONGO_URL`   | MongoDB connection string (Atlas)  |
 
 ---
