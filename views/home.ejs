@@ -8,7 +8,7 @@
 <body>
     <h1>URL Shortner</h1>
     <% if( locals.id ) { %>
-        <p> Generated URL is -> http://localhost:8001/id/<%= id %></p>
+        <p> Generated URL is -> http://localhost:<%= process.env.PORT %>/id/<%= id %></p>
     <% } %>
     <form method="post" action="/url">
     <input type="text" name="url" placeholder="http://example.com">
@@ -32,12 +32,12 @@
                 <% let length = 1; %>
                 <% urls.forEach(url => { %>
                 <tr>
-                    <td><%= length++ %></td>
-                    <td><%= url.shortId %></td>
-                    <td><%= url.redirectUrl %></td>
-                    <td><%= url.visitHistory.length %></td>
+                    <td style="padding: 5px;"><%= length++ %></td>
+                    <td style="padding: 5px;"><%= url.shortId %></td>
+                    <td style="padding: 5px;"><%= url.redirectUrl %></td>
+                    <td style="padding: 5px;"><%= url.visitHistory.length %></td>
                     <% if(locals.role && role == "ADMIN") { %>
-                        <td><%= url.createdBy?.name %></td>
+                        <td style="padding: 5px;"><%= url.createdBy?.name %></td>
                         <% } %>
                 </tr>
                 <% }) %>
