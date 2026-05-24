@@ -19,6 +19,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 const path = require("path");
+
+app.use(express.static(path.resolve("./public")));
+
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views")); 
 app.use(checkForAuthentication);
