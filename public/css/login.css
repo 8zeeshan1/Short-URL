@@ -1,0 +1,229 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    overflow: hidden;
+}
+
+/* Login Container */
+form {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px 35px;
+    border-radius: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Effect (Optional) */
+form::before {
+    content: "Welcome Back";
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Login Button */
+button[type="submit"] {
+    background: #ffffff;
+    color: #5a4fcf;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    background: #f1f1f1;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Signup Button */
+body > button {
+    position: absolute;
+    bottom: 60px;
+    border: none;
+    background: transparent;
+}
+
+body > button a {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+body > button a:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    overflow: hidden;
+}
+
+/* Login Container */
+form {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px 35px;
+    border-radius: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Effect (Optional) */
+form::before {
+    content: "Welcome Back";
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Login Button */
+button[type="submit"] {
+    background: #ffffff;
+    color: #5a4fcf;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    background: #f1f1f1;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Signup Button */
+body > button {
+    position: absolute;
+    bottom: 60px;
+    border: none;
+    background: transparent;
+}
+
+body > button a {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+body > button a:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

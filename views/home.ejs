@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
     <title>Document</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
                 <% urls.forEach(url => { %>
                 <tr>
                     <td style="padding: 5px;"><%= length++ %></td>
-                    <td style="padding: 5px;"><%= url.shortId %></td>
+                    <td style="padding: 5px;"><a href="/id/<%= url.shortId %>" target="_blank"><%= url.shortId %></a></td>
                     <td style="padding: 5px;"><%= url.redirectUrl %></td>
                     <td style="padding: 5px;"><%= url.visitHistory.length %></td>
                     <% if(locals.role && role == "ADMIN") { %>

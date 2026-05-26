@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Document</title>
 </head>
 <body>
     <% if(locals.error){ %>
-        <script>
-         alert("Invalid Email or Password!");
-        </script>
+        <p style="color: red;"><%= error %></p>
         <% } %>
     <form action="/user/login" method="post">
         <input placeholder="email" type="email" name="email">

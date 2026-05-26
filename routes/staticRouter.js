@@ -23,7 +23,9 @@ router.get("/signup", (req, res) =>{
 });
 
 router.get("/login", (req, res)=>{
-    return res.render("login");
+    const error = req.query.error
+    //console.log(error);
+    return res.render("login", { error });
 });
 
 // router.post("/", async(req, res) =>{
