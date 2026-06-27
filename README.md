@@ -92,5 +92,7 @@ This project is built primarily for demonstrating backend concepts using Node.js
 
 **Mohd Zeeshan Quraishi**  
 GitHub: [8zeeshan1](https://github.com/8zeeshan1)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Now-blue?style=for-the-badge)](https://zeeshanquraishi.netlify.app/)
+
 
 ---
